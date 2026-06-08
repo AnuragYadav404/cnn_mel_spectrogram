@@ -1,0 +1,80 @@
+_wandb:
+    value:
+        cli_version: 0.27.0
+        e:
+            7d8jyozou3w8t2e5wlt5fidhtx22bunx:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 10
+                    macModel: Mac14,15
+                    memoryGb: 16
+                    name: Apple M2
+                    pcpuCores: 4
+                    ramTotalBytes: "17179869184"
+                    swapTotalBytes: "8589934592"
+                codePath: /Users/wong/esc50/base_cnn_spectrogram/Signal_Classification.ipynb
+                codePathLocal: Signal_Classification.ipynb
+                cpu_count: 8
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "163889958912"
+                email: anuragyadav@uni-koblenz.de
+                executable: /Users/wong/esc50/base_cnn_spectrogram/.venv/bin/python
+                git:
+                    commit: 2447b0bdec735fac5646eb63a56221fb4ef1f3ef
+                    remote: git@github.com:AnuragYadav404/cnn_mel_spectrogram.git
+                host: Big-Biggie.local
+                memory:
+                    total: "17179869184"
+                os: macOS-14.6.1-arm64-arm-64bit
+                program: /Users/wong/esc50/base_cnn_spectrogram/Signal_Classification.ipynb
+                python: CPython 3.10.14
+                root: logdirs/debug_run2
+                startedAt: "2026-06-07T10:38:36.514226Z"
+                writerId: 7d8jyozou3w8t2e5wlt5fidhtx22bunx
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.10.14
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+                - 63
+                - 71
+                - 106
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+                - 63
+                - 71
+                - 106
+            "3":
+                - 2
+                - 7
+                - 13
+                - 66
+            "4": 3.10.14
+            "5": 0.27.0
+            "6": 5.10.2
+            "8":
+                - 1
+            "12": 0.27.0
+            "13": darwin-arm64

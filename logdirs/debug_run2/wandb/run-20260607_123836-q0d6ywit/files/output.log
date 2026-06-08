@@ -1,0 +1,101 @@
+
+  | Name           | Type             | Params
+----------------------------------------------------
+0 | model          | SpecCNNClasifier | 3.6 M
+1 | _forward       | AudioForward     | 0
+2 | _val_metrics   | MetricCollection | 0
+3 | _train_metrics | MetricCollection | 0
+----------------------------------------------------
+3.6 M     Trainable params
+0         Non-trainable params
+3.6 M     Total params
+14.443    Total estimated model params size (MB)
+/Users/wong/esc50/base_cnn_spectrogram/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:436: Consider setting `persistent_workers=True` in 'val_dataloader' to speed up the dataloader worker initialization.
+/Users/wong/esc50/base_cnn_spectrogram/.venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py:684: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+AttributeError: Can't get attribute 'AudioDataset' on <module '__main__' (built-in)>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+AttributeError: Can't get attribute 'AudioDataset' on <module '__main__' (built-in)>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+AttributeError: Can't get attribute 'AudioDataset' on <module '__main__' (built-in)>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+AttributeError: Can't get attribute 'AudioDataset' on <module '__main__' (built-in)>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+AttributeError: Can't get attribute 'AudioDataset' on <module '__main__' (built-in)>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+AttributeError: Can't get attribute 'AudioDataset' on <module '__main__' (built-in)>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+AttributeError: Can't get attribute 'AudioDataset' on <module '__main__' (built-in)>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Users/wong/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/multiprocessing/spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+AttributeError: Can't get attribute 'AudioDataset' on <module '__main__' (built-in)>
+Training Device : cpu
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+train Loader Len = 22
+valid Loader Len = 6
+Using 16bit Automatic Mixed Precision (AMP)
+/Users/wong/esc50/base_cnn_spectrogram/.venv/lib/python3.10/site-packages/lightning/pytorch/plugins/precision/amp.py:55: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+/Users/wong/esc50/base_cnn_spectrogram/.venv/lib/python3.10/site-packages/torch/amp/grad_scaler.py:136: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn(
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/Users/wong/esc50/base_cnn_spectrogram/.venv/lib/python3.10/site-packages/lightning/pytorch/loggers/wandb.py:390: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+
+  | Name           | Type             | Params
+----------------------------------------------------
+0 | model          | SpecCNNClasifier | 3.6 M
+1 | _forward       | AudioForward     | 0
+2 | _val_metrics   | MetricCollection | 0
+3 | _train_metrics | MetricCollection | 0
+----------------------------------------------------
+3.6 M     Trainable params
+0         Non-trainable params
+3.6 M     Total params
+14.443    Total estimated model params size (MB)
+/Users/wong/esc50/base_cnn_spectrogram/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+/Users/wong/esc50/base_cnn_spectrogram/.venv/lib/python3.10/site-packages/torch/amp/autocast_mode.py:266: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn(
+/Users/wong/esc50/base_cnn_spectrogram/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+`Trainer.fit` stopped: `max_epochs=5` reached.

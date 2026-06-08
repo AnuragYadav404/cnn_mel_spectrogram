@@ -1,0 +1,10 @@
+# Initializing the project repo
+uv init <project_name> --python <python_version>
+
+# adding ipykernel and jupyter
+uv add --dev ipykernel jupyer
+
+# uv run python -m ipykernel install --user --name "<kernel_name>" -- display-name "kernel display name"
+
+
+
