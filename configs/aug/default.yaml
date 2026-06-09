@@ -1,0 +1,23 @@
+waveform:
+  _target_: audiomentations.Compose
+  transforms:
+    - _target_: audiomentations.AddGaussianNoise
+      min_amplitude: 0.005
+      max_amplitude: 0.01
+      p: 0.5
+    - _target_: audiomentations.TimeStretch
+      min_rate: 0.8
+      max_rate: 1.2
+      p: 0.5
+
+spec_augment:
+  freq_mask:
+    mask_max_length: 20
+    mask_max_masks: 5
+    p: 1.0
+    inplace: true
+  time_mask:
+    mask_max_length: 30
+    mask_max_masks: 5
+    p: 1.0
+    inplace: true

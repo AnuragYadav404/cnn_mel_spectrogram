@@ -1,0 +1,4 @@
+_target_: esc50.models.pooling.GeM
+p: 1.0
+eps: 1.0e-6
+trainable: true

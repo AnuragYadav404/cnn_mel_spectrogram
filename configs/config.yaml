@@ -1,0 +1,12 @@
+defaults:
+  - data: esc50
+  - model: spec_cnn
+  - pooling: gem
+  - train: base
+  - optim: adam
+  - sched: cosine
+  - aug: default
+  - metrics: multiclass
+  - _self_
+
+seed: 42

@@ -1,0 +1,17 @@
+_target_: esc50.models.spec_cnn.SpecCNNClassifier
+backbone: tf_efficientnet_b0.in1k
+classifier_dropout: 0.5
+spec_paramms:
+  sample_rate: 32000
+  n_mels: 128
+  f_min: 20
+  n_fft: 1024
+  hop_length: 512
+  normalized: true
+top_db: 80.0
+normalize_config:
+  normalize_standart: true
+  normalize_minmax: true
+pretrained: true
+timm_kwargs: {}
+spec_augment_config: ${aug.spec_augment}

@@ -1,0 +1,11 @@
+spec_augment:
+  freq_mask:
+    mask_max_length: 20
+    mask_max_masks: 5
+    p: 1.0
+    inplace: true
+  time_mask:
+    mask_max_length: 30
+    mask_max_masks: 5
+    p: 1.0
+    inplace: true

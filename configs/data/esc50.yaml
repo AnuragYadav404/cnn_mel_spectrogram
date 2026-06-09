@@ -1,0 +1,35 @@
+data_root: ../input/datasets/mmoreaux/environmental-sound-classification-50
+csv_path: ${data.data_root}/esc50.csv
+num_classes: 50
+
+train_dataset:
+  _target_: esc50.data.dataset.AudioDataset
+  sample_rate: 32000
+  normalize_audio: true
+  audio_transforms: ${aug.waveform}
+  mixup_prob: 0.0
+  mixup_alpha: 0.2
+  training: true
+
+val_dataset:
+  _target_: esc50.data.dataset.AudioDataset
+  sample_rate: 32000
+  normalize_audio: true
+  audio_transforms: null
+  mixup_prob: 0.0
+  mixup_alpha: 0.2
+  training: false
+
+train_dataloader:
+  batch_size: 64
+  shuffle: true
+  drop_last: true
+  num_workers: 4
+  pin_memory: true
+
+val_dataloader:
+  batch_size: 64
+  shuffle: false
+  drop_last: false
+  num_workers: 4
+  pin_memory: true

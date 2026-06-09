@@ -1,0 +1,24 @@
+exp_name: logdirs/debug_run2
+fold_id: 0
+batch_key: aus
+metric_input_key: targets
+metric_output_key: predictions
+main_metric: valid_MulticlassF1Score
+metric_mode: max
+max_epochs: 5
+n_checkpoints_to_save: 3
+log_every_n_steps: 3
+precision_mode: 16-mixed
+train_strategy: auto
+use_train_metrics: true
+scheduler_params:
+  interval: step
+forward:
+  _target_: esc50.training.forward.AudioForward
+  loss_function:
+    _target_: torch.nn.CrossEntropyLoss
+  output_key: logits
+  input_key: targets
+wandb_logger:
+  project: ucu_audio_m3l1
+  mode: disabled
